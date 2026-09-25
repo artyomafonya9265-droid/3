@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D4CE6DC901103EDA0F4BFD2 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7704547F18CF8A7F1A93F6C9 /* AppContainer.swift */; };
+		25538F59678BED68075D3809 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971ACB8DE2A74E15981885A3 /* RootView.swift */; };
+		A8B3695F672E49DCE7AC987C /* ShiftEarningsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC46CC5C174B304F628CD3D6 /* ShiftEarningsApp.swift */; };
+		850D5565338762B441D92EAD /* DomainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115FD9812A5B8DC112526D6C /* DomainModels.swift */; };
+		4174917348B5A943EF1072F1 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722EF4BB2E3012AC86CF2063 /* AppRepository.swift */; };
+		E0FBAEE9DAB6A7FF05FE1F42 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C857AC94E6D30C2BF95140 /* PersistenceController.swift */; };
+		6786C31A3A27B88CCB61B9CD /* SwiftDataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07E5FE04CF7C314588AB63C /* SwiftDataModels.swift */; };
+		A0F7831DBB83230B6F03FD0C /* EarningsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F886FEAF7CEDAFDE984AB7 /* EarningsEngine.swift */; };
+		E2A5BD3FE4E2628EA0401E4F /* NotificationPlanBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C654014053724B1711DE20B2 /* NotificationPlanBuilder.swift */; };
+		F678E2D2A4803FD638398E0D /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DD6E985ABFC70ED13D7F9E /* NotificationScheduler.swift */; };
+		546603EB016BD549D0342FA8 /* TimeVerificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E435FA118FD00D69A115C13 /* TimeVerificationService.swift */; };
+		8361C897FD6677F81FD613D4 /* WorkScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D2EDDBDF2D3ECCB703FBBF /* WorkScheduleService.swift */; };
+		4799CD94177CA214B0F78E6B /* DayKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3639877E129EA94511BFA9E3 /* DayKey.swift */; };
+		0D0B75DE3A925F019A227CDB /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3C4E85D4CD508A7D257A8 /* Formatters.swift */; };
+		A95B332D345A04B34087BF60 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42A3E7DD36573AB87EE24FF /* DashboardViewModel.swift */; };
+		2F8F7119CCDF3D3EE9DBC98C /* WorkCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D8A840E520BD61CE200D70 /* WorkCalendarView.swift */; };
+		6CA36F1DFB58D36AFAE88E74 /* PremiumComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238E513FDCA4BE9DA57C2BFA /* PremiumComponents.swift */; };
+		13AB1403DF4FBE5B02FDD39F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9C5272D792F5F8BF944003 /* DashboardView.swift */; };
+		EF9A9F415602589638F1BD04 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC39C05D9F2211D65A7BC0 /* MainTabView.swift */; };
+		BB54C045460D5F757130D551 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB2A9614E9F5D39F82CCAD7 /* OnboardingView.swift */; };
+		650612BF2CF66068E811E175 /* BreakEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC1E9E06021291CBF00A64A /* BreakEditorView.swift */; };
+		0C27F215A5EF65501F006ABD /* ConfigurationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A61E5776B78A11619240B763 /* ConfigurationHistoryView.swift */; };
+		E9C7800614F4473F296B5523 /* NotificationRuleEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83DCD213D7ACC718D9683C7 /* NotificationRuleEditorView.swift */; };
+		FC396DC22D25675CD57426E7 /* NotificationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48AFE655B07A1081B4CAD9 /* NotificationSettingsView.swift */; };
+		6B361349DC55872F7BCF5E21 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8746EF3A77DD772983949959 /* SettingsView.swift */; };
+		CFE934B8BB106B901AF95C95 /* TimeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC115F39999E8F5EDEDE3C6D /* TimeVerificationView.swift */; };
+		16D1001783CBA0D779E5E93C /* WorkSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9268DFFAD12D54BE4257 /* WorkSettingsView.swift */; };
+		7D17FEAA40631334DC2BB3A5 /* EarningsEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2410C48A6CD87277016E9340 /* EarningsEngineTests.swift */; };
+		39C2B7B593CA70E52877EC29 /* NotificationPlanBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EF4618010D184D57B95732 /* NotificationPlanBuilderTests.swift */; };
+		0B5B4F597AD3ACD2F70EAF10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2BAA48C14157B374334CB7C /* Assets.xcassets */; };
+		927D13EA58C91798501F14F7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4F329EAF0DD11B9E04FB7D /* XCTest.framework */; };
+		1BC2A366EEF4C6154E282F00 /* RepositoryPersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46083EB06C7CBFB7602266D9 /* RepositoryPersistenceTests.swift */; };
+		E5B8C02D3F6A5987B1C2D3E4 /* DashboardRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A7B91C2E5F4876A0B1C2D3 /* DashboardRegressionTests.swift */; };
+		A7D0E24F5B8C71A9D3E4F506 /* NotificationSchedulerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C9D13E4A7B6098C2D3E4F5 /* NotificationSchedulerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E66C2E9A46C6F6EB80B18FF7 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = 98F54143AB4E86B28C3AFEE0 /* Project object */; proxyType = 1; remoteGlobalIDString = B902F7C2327297FC583709E1; remoteInfo = ShiftEarnings; };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXTargetDependency section */
+		9A90034F01BC97BF869DE160 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = B902F7C2327297FC583709E1 /* ShiftEarnings */; targetProxy = E66C2E9A46C6F6EB80B18FF7 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin PBXFileReference section */
+		7704547F18CF8A7F1A93F6C9 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		971ACB8DE2A74E15981885A3 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		EC46CC5C174B304F628CD3D6 /* ShiftEarningsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftEarningsApp.swift; sourceTree = "<group>"; };
+		115FD9812A5B8DC112526D6C /* DomainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainModels.swift; sourceTree = "<group>"; };
+		722EF4BB2E3012AC86CF2063 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
+		B6C857AC94E6D30C2BF95140 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		B07E5FE04CF7C314588AB63C /* SwiftDataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataModels.swift; sourceTree = "<group>"; };
+		47F886FEAF7CEDAFDE984AB7 /* EarningsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsEngine.swift; sourceTree = "<group>"; };
+		C654014053724B1711DE20B2 /* NotificationPlanBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPlanBuilder.swift; sourceTree = "<group>"; };
+		E1DD6E985ABFC70ED13D7F9E /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		2E435FA118FD00D69A115C13 /* TimeVerificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVerificationService.swift; sourceTree = "<group>"; };
+		34D2EDDBDF2D3ECCB703FBBF /* WorkScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkScheduleService.swift; sourceTree = "<group>"; };
+		3639877E129EA94511BFA9E3 /* DayKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayKey.swift; sourceTree = "<group>"; };
+		1AE3C4E85D4CD508A7D257A8 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		C42A3E7DD36573AB87EE24FF /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		89D8A840E520BD61CE200D70 /* WorkCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCalendarView.swift; sourceTree = "<group>"; };
+		238E513FDCA4BE9DA57C2BFA /* PremiumComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumComponents.swift; sourceTree = "<group>"; };
+		8A9C5272D792F5F8BF944003 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		72DC39C05D9F2211D65A7BC0 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		2DB2A9614E9F5D39F82CCAD7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		3FC1E9E06021291CBF00A64A /* BreakEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakEditorView.swift; sourceTree = "<group>"; };
+		A61E5776B78A11619240B763 /* ConfigurationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationHistoryView.swift; sourceTree = "<group>"; };
+		B83DCD213D7ACC718D9683C7 /* NotificationRuleEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRuleEditorView.swift; sourceTree = "<group>"; };
+		FC48AFE655B07A1081B4CAD9 /* NotificationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
+		8746EF3A77DD772983949959 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AC115F39999E8F5EDEDE3C6D /* TimeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVerificationView.swift; sourceTree = "<group>"; };
+		F80A9268DFFAD12D54BE4257 /* WorkSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSettingsView.swift; sourceTree = "<group>"; };
+		2410C48A6CD87277016E9340 /* EarningsEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsEngineTests.swift; sourceTree = "<group>"; };
+		45EF4618010D184D57B95732 /* NotificationPlanBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPlanBuilderTests.swift; sourceTree = "<group>"; };
+		D2BAA48C14157B374334CB7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845F65209D19F1E91A3C573D /* ShiftEarnings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShiftEarnings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FEED0499F36FF4A8531E2EC /* ShiftEarningsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftEarningsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4F329EAF0DD11B9E04FB7D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
+		46083EB06C7CBFB7602266D9 /* RepositoryPersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryPersistenceTests.swift; sourceTree = "<group>"; };
+		D4A7B91C2E5F4876A0B1C2D3 /* DashboardRegressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardRegressionTests.swift; sourceTree = "<group>"; };
+		F6C9D13E4A7B6098C2D3E4F5 /* NotificationSchedulerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSchedulerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF8D21E9E84F4DF4F2CFEE1E /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C4F12A3572FBE21543BA46A8 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (927D13EA58C91798501F14F7 /* XCTest.framework in Frameworks */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB48CFA305015276AB5620D4 = {isa = PBXGroup; children = (
+			C8A1E76B6CA46DDC89E29CCD /* ShiftEarnings */,
+			8C35799A97AD3FA99FA2EDFE /* ShiftEarningsTests */,
+			692092DE1C1C8624E142B71D /* Products */,
+			E98EF9E8E463C4AD21FCC778 /* Frameworks */,
+		); sourceTree = "<group>"; };
+		C8A1E76B6CA46DDC89E29CCD /* ShiftEarnings */ = {isa = PBXGroup; children = (
+			4C9813858348C1319B38A928 /* App */,
+			C4F3EE54EF08609995EF3DFE /* Models */,
+			9D06E590DD0AAE71FB33AF2B /* Persistence */,
+			CC3821E409D53F9A0D5701BC /* Resources */,
+			1B23352A1EBD3BAA3F65E3ED /* Services */,
+			A4A25C8EF475C8CCD810B079 /* Utilities */,
+			DC01768F31DBF24190FD6782 /* ViewModels */,
+			D72F5369182493E424F08E39 /* Views */,
+		); path = ShiftEarnings; sourceTree = "<group>"; };
+		4C9813858348C1319B38A928 /* App */ = {isa = PBXGroup; children = (
+			7704547F18CF8A7F1A93F6C9 /* AppContainer.swift */,
+			971ACB8DE2A74E15981885A3 /* RootView.swift */,
+			EC46CC5C174B304F628CD3D6 /* ShiftEarningsApp.swift */,
+		); path = App; sourceTree = "<group>"; };
+		C4F3EE54EF08609995EF3DFE /* Models */ = {isa = PBXGroup; children = (
+			115FD9812A5B8DC112526D6C /* DomainModels.swift */,
+		); path = Models; sourceTree = "<group>"; };
+		9D06E590DD0AAE71FB33AF2B /* Persistence */ = {isa = PBXGroup; children = (
+			722EF4BB2E3012AC86CF2063 /* AppRepository.swift */,
+			B6C857AC94E6D30C2BF95140 /* PersistenceController.swift */,
+			B07E5FE04CF7C314588AB63C /* SwiftDataModels.swift */,
+		); path = Persistence; sourceTree = "<group>"; };
+		CC3821E409D53F9A0D5701BC /* Resources */ = {isa = PBXGroup; children = (
+			D2BAA48C14157B374334CB7C /* Assets.xcassets */,
+		); path = Resources; sourceTree = "<group>"; };
+		1B23352A1EBD3BAA3F65E3ED /* Services */ = {isa = PBXGroup; children = (
+			47F886FEAF7CEDAFDE984AB7 /* EarningsEngine.swift */,
+			C654014053724B1711DE20B2 /* NotificationPlanBuilder.swift */,
+			E1DD6E985ABFC70ED13D7F9E /* NotificationScheduler.swift */,
+			2E435FA118FD00D69A115C13 /* TimeVerificationService.swift */,
+			34D2EDDBDF2D3ECCB703FBBF /* WorkScheduleService.swift */,
+		); path = Services; sourceTree = "<group>"; };
+		A4A25C8EF475C8CCD810B079 /* Utilities */ = {isa = PBXGroup; children = (
+			3639877E129EA94511BFA9E3 /* DayKey.swift */,
+			1AE3C4E85D4CD508A7D257A8 /* Formatters.swift */,
+		); path = Utilities; sourceTree = "<group>"; };
+		DC01768F31DBF24190FD6782 /* ViewModels */ = {isa = PBXGroup; children = (
+			C42A3E7DD36573AB87EE24FF /* DashboardViewModel.swift */,
+		); path = ViewModels; sourceTree = "<group>"; };
+		D72F5369182493E424F08E39 /* Views */ = {isa = PBXGroup; children = (
+			2FC15BF12F20AE6049E8ED71 /* Calendar */,
+			EFB6BCD0320FF04297830CEB /* Components */,
+			B78D8848C698A16AB16E408F /* Dashboard */,
+			56A2C6D453A434F046FE13F4 /* Onboarding */,
+			058E4C7CCFB120FE6F693A02 /* Settings */,
+			72DC39C05D9F2211D65A7BC0 /* MainTabView.swift */,
+		); path = Views; sourceTree = "<group>"; };
+		2FC15BF12F20AE6049E8ED71 /* Calendar */ = {isa = PBXGroup; children = (
+			89D8A840E520BD61CE200D70 /* WorkCalendarView.swift */,
+		); path = Calendar; sourceTree = "<group>"; };
+		EFB6BCD0320FF04297830CEB /* Components */ = {isa = PBXGroup; children = (
+			238E513FDCA4BE9DA57C2BFA /* PremiumComponents.swift */,
+		); path = Components; sourceTree = "<group>"; };
+		B78D8848C698A16AB16E408F /* Dashboard */ = {isa = PBXGroup; children = (
+			8A9C5272D792F5F8BF944003 /* DashboardView.swift */,
+		); path = Dashboard; sourceTree = "<group>"; };
+		56A2C6D453A434F046FE13F4 /* Onboarding */ = {isa = PBXGroup; children = (
+			2DB2A9614E9F5D39F82CCAD7 /* OnboardingView.swift */,
+		); path = Onboarding; sourceTree = "<group>"; };
+		058E4C7CCFB120FE6F693A02 /* Settings */ = {isa = PBXGroup; children = (
+			3FC1E9E06021291CBF00A64A /* BreakEditorView.swift */,
+			A61E5776B78A11619240B763 /* ConfigurationHistoryView.swift */,
+			B83DCD213D7ACC718D9683C7 /* NotificationRuleEditorView.swift */,
+			FC48AFE655B07A1081B4CAD9 /* NotificationSettingsView.swift */,
+			8746EF3A77DD772983949959 /* SettingsView.swift */,
+			AC115F39999E8F5EDEDE3C6D /* TimeVerificationView.swift */,
+			F80A9268DFFAD12D54BE4257 /* WorkSettingsView.swift */,
+		); path = Settings; sourceTree = "<group>"; };
+		8C35799A97AD3FA99FA2EDFE /* ShiftEarningsTests */ = {isa = PBXGroup; children = (
+			2410C48A6CD87277016E9340 /* EarningsEngineTests.swift */,
+			45EF4618010D184D57B95732 /* NotificationPlanBuilderTests.swift */,
+			F6C9D13E4A7B6098C2D3E4F5 /* NotificationSchedulerTests.swift */,
+			D4A7B91C2E5F4876A0B1C2D3 /* DashboardRegressionTests.swift */,
+			46083EB06C7CBFB7602266D9 /* RepositoryPersistenceTests.swift */,
+		); path = ShiftEarningsTests; sourceTree = "<group>"; };
+		692092DE1C1C8624E142B71D /* Products */ = {isa = PBXGroup; children = (845F65209D19F1E91A3C573D /* ShiftEarnings.app */, 9FEED0499F36FF4A8531E2EC /* ShiftEarningsTests.xctest */,); name = Products; sourceTree = "<group>"; };
+		E98EF9E8E463C4AD21FCC778 /* Frameworks */ = {isa = PBXGroup; children = (8E4F329EAF0DD11B9E04FB7D /* XCTest.framework */,); name = Frameworks; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B902F7C2327297FC583709E1 /* ShiftEarnings */ = {isa = PBXNativeTarget; buildConfigurationList = 8A60603318F4F2D479103030 /* Build configuration list for PBXNativeTarget "ShiftEarnings" */; buildPhases = (68794D95D50DF8ED5158D413 /* Sources */, BF8D21E9E84F4DF4F2CFEE1E /* Frameworks */, 253694B87BCB5FB6ECA0DC84 /* Resources */,); buildRules = (); dependencies = (); name = ShiftEarnings; productName = ShiftEarnings; productReference = 845F65209D19F1E91A3C573D /* ShiftEarnings.app */; productType = "com.apple.product-type.application"; };
+		6A1E24F1D627678E5C8106C0 /* ShiftEarningsTests */ = {isa = PBXNativeTarget; buildConfigurationList = 7C210B295701AD5D084AF162 /* Build configuration list for PBXNativeTarget "ShiftEarningsTests" */; buildPhases = (DBA958A7378A46E5249DC865 /* Sources */, C4F12A3572FBE21543BA46A8 /* Frameworks */, 29527BA9BC9C4A2D8521E2A3 /* Resources */,); buildRules = (); dependencies = (9A90034F01BC97BF869DE160 /* PBXTargetDependency */,); name = ShiftEarningsTests; productName = ShiftEarningsTests; productReference = 9FEED0499F36FF4A8531E2EC /* ShiftEarningsTests.xctest */; productType = "com.apple.product-type.bundle.unit-test"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98F54143AB4E86B28C3AFEE0 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 1600; LastUpgradeCheck = 1600; TargetAttributes = {B902F7C2327297FC583709E1 = {CreatedOnToolsVersion = 16.0; }; 6A1E24F1D627678E5C8106C0 = {CreatedOnToolsVersion = 16.0; TestTargetID = B902F7C2327297FC583709E1; }; }; }; buildConfigurationList = 99DE79F146C1665D0B462638 /* Build configuration list for PBXProject "ShiftEarnings" */; compatibilityVersion = "Xcode 14.0"; developmentRegion = ru; hasScannedForEncodings = 0; knownRegions = (ru, Base,); mainGroup = AB48CFA305015276AB5620D4; productRefGroup = 692092DE1C1C8624E142B71D /* Products */; projectDirPath = ""; projectRoot = ""; targets = (B902F7C2327297FC583709E1 /* ShiftEarnings */, 6A1E24F1D627678E5C8106C0 /* ShiftEarningsTests */,); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		253694B87BCB5FB6ECA0DC84 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (0B5B4F597AD3ACD2F70EAF10 /* Assets.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+		29527BA9BC9C4A2D8521E2A3 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68794D95D50DF8ED5158D413 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+			3D4CE6DC901103EDA0F4BFD2 /* AppContainer.swift in Sources */,
+			25538F59678BED68075D3809 /* RootView.swift in Sources */,
+			A8B3695F672E49DCE7AC987C /* ShiftEarningsApp.swift in Sources */,
+			850D5565338762B441D92EAD /* DomainModels.swift in Sources */,
+			4174917348B5A943EF1072F1 /* AppRepository.swift in Sources */,
+			E0FBAEE9DAB6A7FF05FE1F42 /* PersistenceController.swift in Sources */,
+			6786C31A3A27B88CCB61B9CD /* SwiftDataModels.swift in Sources */,
+			A0F7831DBB83230B6F03FD0C /* EarningsEngine.swift in Sources */,
+			E2A5BD3FE4E2628EA0401E4F /* NotificationPlanBuilder.swift in Sources */,
+			F678E2D2A4803FD638398E0D /* NotificationScheduler.swift in Sources */,
+			546603EB016BD549D0342FA8 /* TimeVerificationService.swift in Sources */,
+			8361C897FD6677F81FD613D4 /* WorkScheduleService.swift in Sources */,
+			4799CD94177CA214B0F78E6B /* DayKey.swift in Sources */,
+			0D0B75DE3A925F019A227CDB /* Formatters.swift in Sources */,
+			A95B332D345A04B34087BF60 /* DashboardViewModel.swift in Sources */,
+			2F8F7119CCDF3D3EE9DBC98C /* WorkCalendarView.swift in Sources */,
+			6CA36F1DFB58D36AFAE88E74 /* PremiumComponents.swift in Sources */,
+			13AB1403DF4FBE5B02FDD39F /* DashboardView.swift in Sources */,
+			EF9A9F415602589638F1BD04 /* MainTabView.swift in Sources */,
+			BB54C045460D5F757130D551 /* OnboardingView.swift in Sources */,
+			650612BF2CF66068E811E175 /* BreakEditorView.swift in Sources */,
+			0C27F215A5EF65501F006ABD /* ConfigurationHistoryView.swift in Sources */,
+			E9C7800614F4473F296B5523 /* NotificationRuleEditorView.swift in Sources */,
+			FC396DC22D25675CD57426E7 /* NotificationSettingsView.swift in Sources */,
+			6B361349DC55872F7BCF5E21 /* SettingsView.swift in Sources */,
+			CFE934B8BB106B901AF95C95 /* TimeVerificationView.swift in Sources */,
+			16D1001783CBA0D779E5E93C /* WorkSettingsView.swift in Sources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+		DBA958A7378A46E5249DC865 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (
+			7D17FEAA40631334DC2BB3A5 /* EarningsEngineTests.swift in Sources */,
+			39C2B7B593CA70E52877EC29 /* NotificationPlanBuilderTests.swift in Sources */,
+			A7D0E24F5B8C71A9D3E4F506 /* NotificationSchedulerTests.swift in Sources */,
+			E5B8C02D3F6A5987B1C2D3E4 /* DashboardRegressionTests.swift in Sources */,
+			1BC2A366EEF4C6154E282F00 /* RepositoryPersistenceTests.swift in Sources */,
+		); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8D15F8B88B3136D25DB14F0C /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = dwarf;
+			ENABLE_TESTABILITY = YES;
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			GCC_OPTIMIZATION_LEVEL = 0;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			ONLY_ACTIVE_ARCH = YES;
+			SDKROOT = iphoneos;
+			SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+		}; name = Debug; };
+		2D91E1B09B2A8DFC3CA847CD /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			ALWAYS_SEARCH_USER_PATHS = NO;
+			CLANG_ENABLE_MODULES = YES;
+			CLANG_ENABLE_OBJC_ARC = YES;
+			COPY_PHASE_STRIP = NO;
+			DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			GCC_C_LANGUAGE_STANDARD = gnu17;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			SDKROOT = iphoneos;
+			SWIFT_COMPILATION_MODE = wholemodule;
+			VALIDATE_PRODUCT = YES;
+		}; name = Release; };
+		A9B6C4BB074DA74D42639B2F /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "Заработок";
+			INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.example.ShiftEarnings;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = 1;
+		}; name = Debug; };
+		87F595B1E5992FFFAB6A3B42 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+			ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+			CODE_SIGN_STYLE = Automatic;
+			CURRENT_PROJECT_VERSION = 1;
+			GENERATE_INFOPLIST_FILE = YES;
+			INFOPLIST_KEY_CFBundleDisplayName = "Заработок";
+			INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+			INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+			INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+			INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+			MARKETING_VERSION = 1.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.example.ShiftEarnings;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_EMIT_LOC_STRINGS = YES;
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = 1;
+		}; name = Release; };
+		57BE3EAC89139C29F82ACF9D /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {
+			BUNDLE_LOADER = "$(TEST_HOST)";
+			CODE_SIGN_STYLE = Automatic;
+			GENERATE_INFOPLIST_FILE = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.example.ShiftEarningsTests;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = 1;
+			TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiftEarnings.app/ShiftEarnings";
+		}; name = Debug; };
+		98E8CC4D88F9D63BFF88E837 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {
+			BUNDLE_LOADER = "$(TEST_HOST)";
+			CODE_SIGN_STYLE = Automatic;
+			GENERATE_INFOPLIST_FILE = YES;
+			IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+			PRODUCT_BUNDLE_IDENTIFIER = com.example.ShiftEarningsTests;
+			PRODUCT_NAME = "$(TARGET_NAME)";
+			SWIFT_VERSION = 5.0;
+			TARGETED_DEVICE_FAMILY = 1;
+			TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiftEarnings.app/ShiftEarnings";
+		}; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99DE79F146C1665D0B462638 /* Build configuration list for PBXProject "ShiftEarnings" */ = {isa = XCConfigurationList; buildConfigurations = (8D15F8B88B3136D25DB14F0C /* Debug */, 2D91E1B09B2A8DFC3CA847CD /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		8A60603318F4F2D479103030 /* Build configuration list for PBXNativeTarget "ShiftEarnings" */ = {isa = XCConfigurationList; buildConfigurations = (A9B6C4BB074DA74D42639B2F /* Debug */, 87F595B1E5992FFFAB6A3B42 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		7C210B295701AD5D084AF162 /* Build configuration list for PBXNativeTarget "ShiftEarningsTests" */ = {isa = XCConfigurationList; buildConfigurations = (57BE3EAC89139C29F82ACF9D /* Debug */, 98E8CC4D88F9D63BFF88E837 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 98F54143AB4E86B28C3AFEE0 /* Project object */;
+}
