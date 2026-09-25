@@ -1,0 +1,49 @@
+workflows:
+  signed-ipa:
+    name: ShiftEarnings — Signed IPA
+    instance_type: mac_mini_m2
+    max_build_duration: 60
+
+    environment:
+      xcode: latest
+      ios_signing:
+        provisioning_profiles:
+          - shift_profile
+        certificates:
+          - shift_cert
+
+    scripts:
+      - name: Set Bundle ID for provisioning profile
+        script: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import os
+
+          path = Path(os.environ["CM_BUILD_DIR"]) / "ShiftEarnings.xcodeproj" / "project.pbxproj"
+          text = path.read_text()
+
+          old = "PRODUCT_BUNDLE_IDENTIFIER = com.example.ShiftEarnings;"
+          new = "PRODUCT_BUNDLE_IDENTIFIER = app.pepper1107.galaxy1938;"
+
+          count = text.count(old)
+          if count != 2:
+              raise SystemExit(f"Expected 2 app Bundle ID entries, found {count}")
+
+          path.write_text(text.replace(old, new))
+          print("Bundle ID changed to app.pepper1107.galaxy1938")
+          PY
+
+      - name: Set up code signing
+        script: |
+          xcode-project use-profiles
+
+      - name: Build signed IPA
+        script: |
+          xcode-project build-ipa \
+            --project "$CM_BUILD_DIR/ShiftEarnings.xcodeproj" \
+            --scheme "ShiftEarnings"
+
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
