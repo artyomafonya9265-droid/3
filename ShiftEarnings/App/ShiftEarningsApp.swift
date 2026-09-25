@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 @main
 struct ShiftEarningsApp: App {
