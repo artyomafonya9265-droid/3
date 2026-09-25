@@ -1,7 +1,8 @@
 import Foundation
 
-struct DayKey: RawRepresentable, Hashable, Codable, Comparable, CustomStringConvertible {
+struct DayKey: RawRepresentable, Hashable, Codable, Comparable, CustomStringConvertible, Identifiable {
     let rawValue: Int
+    var id: Int { rawValue }
 
     init(rawValue: Int) {
         self.rawValue = rawValue
