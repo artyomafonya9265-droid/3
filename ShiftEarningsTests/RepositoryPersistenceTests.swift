@@ -19,7 +19,8 @@ final class RepositoryPersistenceTests: XCTestCase {
 
     @MainActor
     func testMasterToggleOffAndOnPreservesIntervals() throws {
-        let (_, repository) = try makeRepository()
+        let (container, repository) = try makeRepository()
+        defer { withExtendedLifetime(container) {} }
         let original = NotificationRuleSnapshot(
             breakKey: "smoke-1",
             beforeStartOffsets: [15, 5],
@@ -60,7 +61,8 @@ final class RepositoryPersistenceTests: XCTestCase {
 
     @MainActor
     func testResetClearsAllIntervalsButKeepsWorkConfiguration() throws {
-        let (_, repository) = try makeRepository()
+        let (container, repository) = try makeRepository()
+        defer { withExtendedLifetime(container) {} }
         for key in ["smoke-1", "lunch", "smoke-2"] {
             try repository.saveNotificationRule(NotificationRuleSnapshot(
                 breakKey: key,
